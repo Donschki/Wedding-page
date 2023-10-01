@@ -128,18 +128,16 @@ body {
 
 /* DOTS INDICATORS IN SLIDESHOW */
 .dots {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  position: relative;
+  bottom: 2rem;
   text-align: center;
   padding-bottom: 0.5rem;
 }
 
 .dot {
-  height: 17px;
-  width: 17px;
-  margin: 0 5px;
+  height: 20px;
+  width: 20px;
+  margin: 0 10px;
   background-color: rgb(205, 188, 175);
   border-radius: 50%;
   display: inline-block;
@@ -177,14 +175,14 @@ main {
   justify-content: center;
   text-align: center;
   margin: auto;
+  padding-block: 2rem;
   color: var(--font-color);
   font-family: "CustomFont";
-  font-size: clamp(2rem, -1.5rem + 8vw, 3rem);
+  font-size: clamp(1.5rem, -1rem + 4vw, 2.5rem);
 }
 .main-title-container h1 {
-  max-width: 600px;
+  max-width: 500px;
   letter-spacing: 5px;
-  padding-block: 3rem;
 }
 
 .invite-section .invite-image-container {
@@ -193,24 +191,26 @@ main {
   align-items: center;
   flex-direction: column;
   gap: 2rem;
+  padding-block: 2rem;
 }
 .invite-section .invite-image-container img {
   width: 320px;
 }
 .invite-section .fern {
-  position: absolute;
+  position: fixed;
   right: 0;
-  bottom: -20rem;
+  top: 30rem;
   z-index: -1;
   width: 300px;
-  height: 30%;
+  height: 50%;
 }
 .invite-section .fern-2 {
-  position: absolute;
+  position: fixed;
   left: -6rem;
-  top: 38rem;
+  top: 0rem;
   z-index: -1;
   width: 300px;
+  height: 100%;
 }
 
 .venu-container {
@@ -327,10 +327,11 @@ main {
   .main-title-container {
     min-width: 500px;
     grid-column: 2;
-    grid-row: 2;
+    grid-row: 1;
   }
   .invite-section .invite-image-container {
     flex-direction: row;
+    padding-block: 1rem;
   }
   .invite-section .invite-image-container img {
     max-width: 400px;
@@ -343,11 +344,14 @@ main {
     font-family: "MyCustomFont";
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 200px;
     grid-row: 1/4;
   }
   .navigation-expanded-container ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
     list-style: none;
   }
   .navigation-expanded-container ul a {
