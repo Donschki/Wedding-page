@@ -199,18 +199,17 @@ main {
 .invite-section .fern {
   position: fixed;
   right: 0;
-  top: 30rem;
+  top: 20rem;
   z-index: -1;
   width: 300px;
-  height: 50%;
+  height: 100%;
 }
 .invite-section .fern-2 {
   position: fixed;
   left: -6rem;
-  top: 0rem;
+  top: 10rem;
   z-index: -1;
   width: 300px;
-  height: 100%;
 }
 
 .venu-container {
