@@ -318,14 +318,12 @@ main {
     display: none;
   }
   main {
-    grid-template-columns: 1fr 1fr;
-    gap: 0;
+    grid-template-columns: 200px 1fr;
   }
   .main-title-container {
     min-width: 500px;
-  }
-  .slider-section {
-    grid-column: 1;
+    grid-column: 2;
+    grid-row: 2;
   }
   .invite-section {
     grid-column: 2;
