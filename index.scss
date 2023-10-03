@@ -122,8 +122,12 @@ body {
 
 // Slideshow container 
 
-.slideshow-container {
+.slider-section {
  height: 50vh;
+
+ .slideshow-container {
+      height: 100%;
+ }
 
        img {
         width: 100%; height: 100%;
@@ -145,16 +149,18 @@ body {
 
 /* DOTS INDICATORS IN SLIDESHOW */
 .dots {
-       position: relative;
-       bottom: 2rem;
-       
-       text-align: center;
-       padding-bottom: 0.5rem;
-}
+      position: absolute;
+      bottom: 52%;
+      gap: 1rem;
+      z-index: 1;
+     right:0;
+     left: 0;
+     text-align: center;
+
 
 .dot {
-       height: 20px;
-       width: 20px;
+       height: 30px;
+       width: 30px;
        margin: 0 10px;
        background-color: rgb(205, 188, 175);
        border-radius: 50%;
@@ -162,9 +168,10 @@ body {
        transition: background-color 0.6s ease;
 }
 
+
 .active, .dot:hover {
     background-color: #717171;
-}
+}}
   
 /* FADING DOT ANIMATION */
 .fade {
@@ -200,7 +207,7 @@ main {
  
  color: var(--font-color);
  font-family: "CustomFont";
- font-size: clamp(1.5rem, -1rem + 4vw, 2.5rem);
+ font-size: clamp(1.5rem, -1rem + 4vw, 2rem);
 
 
        h1 {
@@ -223,19 +230,16 @@ main {
       }
 
       .fern {
-       position: fixed;
-       right: 0; top: 20rem;
+       position: absolute;
+       right: 0; top: 60rem;
        z-index: -1;
-       width: 300px;
-       height: 50vh;
 
       }
 
       .fern-2 {
-       position: fixed;
-       left: -6rem; top: 10rem;
+       position: absolute;
+       left: -3rem; top: 30rem;
        z-index: -1;
-       height: 50vh;
        width: 300px; 
       }
 }
@@ -366,8 +370,9 @@ letter-spacing: 3px;
        display: none;
 }
 
-main {
+ main {
  grid-template-columns: 200px 1fr;
+ height: 10vh;
 }
 
 .slideshow-container {
@@ -391,8 +396,13 @@ main {
              }
 }
 
+.fern {
+      right: 0; top: 45rem;
+
+     }
+
  .fern-2 {
-             left: 7rem;
+       left: 10rem;
 }
 }
 
@@ -456,5 +466,13 @@ main {
       .invite-section .invite-image-container img {
        width: 427px;
         }
+
+        .invite-image-container {
+            .fern {
+                  top: 50rem;
+              }
+        }
+
+       
 }
 

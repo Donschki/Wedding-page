@@ -103,10 +103,13 @@ body {
   display: none;
 }
 
-.slideshow-container {
+.slider-section {
   height: 50vh;
 }
-.slideshow-container img {
+.slider-section .slideshow-container {
+  height: 100%;
+}
+.slider-section img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -128,23 +131,24 @@ body {
 
 /* DOTS INDICATORS IN SLIDESHOW */
 .dots {
-  position: relative;
-  bottom: 2rem;
+  position: absolute;
+  bottom: 52%;
+  gap: 1rem;
+  z-index: 1;
+  right: 0;
+  left: 0;
   text-align: center;
-  padding-bottom: 0.5rem;
 }
-
-.dot {
-  height: 20px;
-  width: 20px;
+.dots .dot {
+  height: 30px;
+  width: 30px;
   margin: 0 10px;
   background-color: rgb(205, 188, 175);
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
-.active, .dot:hover {
+.dots .active, .dots .dot:hover {
   background-color: #717171;
 }
 
@@ -178,7 +182,7 @@ main {
   padding-block: 2rem;
   color: var(--font-color);
   font-family: "CustomFont";
-  font-size: clamp(1.5rem, -1rem + 4vw, 2.5rem);
+  font-size: clamp(1.5rem, -1rem + 4vw, 2rem);
 }
 .main-title-container h1 {
   max-width: 500px;
@@ -197,19 +201,16 @@ main {
   width: 320px;
 }
 .invite-section .fern {
-  position: fixed;
+  position: absolute;
   right: 0;
-  top: 20rem;
+  top: 60rem;
   z-index: -1;
-  width: 300px;
-  height: 50vh;
 }
 .invite-section .fern-2 {
-  position: fixed;
-  left: -6rem;
-  top: 10rem;
+  position: absolute;
+  left: -3rem;
+  top: 30rem;
   z-index: -1;
-  height: 50vh;
   width: 300px;
 }
 
@@ -320,6 +321,7 @@ main {
   }
   main {
     grid-template-columns: 200px 1fr;
+    height: 10vh;
   }
   .slideshow-container {
     grid-column: 0;
@@ -336,8 +338,12 @@ main {
   .invite-section .invite-image-container img {
     max-width: 400px;
   }
+  .invite-section .fern {
+    right: 0;
+    top: 45rem;
+  }
   .invite-section .fern-2 {
-    left: 7rem;
+    left: 10rem;
   }
   .navigation-expanded-container {
     background: var(--base-color-dark);
@@ -373,5 +379,8 @@ main {
 @media only screen and (min-width: 1500px) {
   .invite-section .invite-image-container img {
     width: 427px;
+  }
+  .invite-image-container .fern {
+    top: 50rem;
   }
 }/*# sourceMappingURL=index.css.map */
