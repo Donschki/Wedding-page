@@ -205,13 +205,13 @@ main {
 
        h1 { 
         text-align: center;
-        width: 300px;
+        max-width: 350px;
         margin: auto;
         padding-top: 2rem;
 
         font-family: "CustomFont";
         letter-spacing: 3px;
-        font-size: clamp(1rem, 5vw, 2rem);
+        font-size: clamp(1.5rem, 5vw, 2.5rem);
         color: var(--font-color);
 }
       
@@ -250,15 +250,13 @@ main {
 .venu-heading-container {
  display: flex;
  flex-direction: column;
- justify-content: center;
- align-items: center;
-
  padding: 1rem;
+ margin: 0 auto;
 }
 
 .venu-container {
  display: grid ;
- height: 80vh;
+ height: 70vh;
 }
 
 .venu-iframe-container {
@@ -296,7 +294,9 @@ main {
 
 
 // LODGING PAGE
+#main-lodging {
 
+}
 // 
 
 
@@ -387,6 +387,7 @@ main {
 }
 
 @media only screen and (min-width: 768px) {
+
 #main-index {
       grid-template-columns: 200px 1fr;
 }
@@ -409,7 +410,6 @@ main {
 
 .venu-heading-container {
  max-width: 400px;
- margin: auto;
 }
 
 .venu-background-img {
@@ -428,10 +428,11 @@ main {
 
 
 .invite-section {
+      align-items: top;
 
        .invite-image-container {
        flex-direction: row;
-       padding-block: 1rem;
+       align-items: flex-start;
             
              img {
                    max-width: 400px ;

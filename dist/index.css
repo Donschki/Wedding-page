@@ -140,8 +140,8 @@ body {
   text-align: center;
 }
 .dots .dot {
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
   margin: 0 10px;
   background-color: #cdbcaf;
   border-radius: 50%;
@@ -175,14 +175,14 @@ main {
 }
 
 .invite-section h1 {
-  color: black;
   text-align: center;
-  width: 300px;
+  max-width: 350px;
   margin: auto;
   padding-top: 2rem;
   font-family: "CustomFont";
   letter-spacing: 3px;
-  font-size: clamp(1rem, 5vw, 2rem);
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  color: var(--font-color);
 }
 .invite-section .invite-image-container {
   display: flex;
@@ -210,20 +210,19 @@ main {
 }
 
 #main-venu {
-  height: 100vh;
   grid-template-rows: 380px 1fr;
 }
 
 .venu-heading-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 1rem;
+  margin: 0 auto;
 }
 
 .venu-container {
   display: grid;
-  grid-row: 2/4;
+  height: 70vh;
 }
 
 .venu-iframe-container {
@@ -252,7 +251,7 @@ main {
 .headings {
   padding-block: 2rem;
   text-align: center;
-  font-size: clamp(2.2rem, 10vw, 3.5rem);
+  font-size: clamp(2rem, 5vw, 2.5rem);
   color: var(--font-color);
   font-family: "MyCustomFont";
   letter-spacing: 3px;
@@ -326,26 +325,32 @@ main {
 }
 
 .faq-active:after {
-  content: "➖";
   /* Unicode character for "minus" sign (-) */
+  content: "➖";
 }
 
 @media only screen and (min-width: 768px) {
+  #main-index {
+    grid-template-columns: 200px 1fr;
+  }
+
   #main-venu {
     grid-template-columns: 200px 1fr;
+  }
+  #main-venu .navigation-expanded-container {
+    grid-row: 2/2;
+  }
+
+  .invite-section {
+    grid-column: 2;
   }
 
   .burger-icon {
     display: none;
   }
 
-  .venu-container {
-    height: 60vh;
-  }
-
   .venu-heading-container {
     max-width: 400px;
-    margin: auto;
   }
 
   .venu-background-img {
@@ -361,9 +366,12 @@ main {
     grid-column: 0;
   }
 
+  .invite-section {
+    align-items: top;
+  }
   .invite-section .invite-image-container {
     flex-direction: row;
-    padding-block: 1rem;
+    align-items: flex-start;
   }
   .invite-section .invite-image-container img {
     max-width: 400px;
@@ -381,7 +389,7 @@ main {
     font-family: "MyCustomFont";
     display: flex;
     justify-content: center;
-    grid-row: 2/4;
+    grid-row: 1/4;
   }
   .navigation-expanded-container ul {
     display: flex;

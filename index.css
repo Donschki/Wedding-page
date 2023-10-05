@@ -114,10 +114,8 @@ body {
 .slider-section img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center 50%;
-     object-position: center 50%;
+  object-fit: cover;
+  object-position: center 50%;
 }
 
 /* Hide the images by default */
@@ -178,12 +176,12 @@ main {
 
 .invite-section h1 {
   text-align: center;
-  width: 300px;
+  max-width: 350px;
   margin: auto;
   padding-top: 2rem;
   font-family: "CustomFont";
   letter-spacing: 3px;
-  font-size: clamp(1rem, 5vw, 2rem);
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
   color: var(--font-color);
 }
 .invite-section .invite-image-container {
@@ -218,14 +216,13 @@ main {
 .venu-heading-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 1rem;
+  margin: 0 auto;
 }
 
 .venu-container {
   display: grid;
-  height: 80vh;
+  height: 70vh;
 }
 
 .venu-iframe-container {
@@ -240,10 +237,8 @@ main {
 .venu-background-img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center 50%;
-     object-position: center 50%;
+  object-fit: cover;
+  object-position: center 50%;
 }
 
 .venu-main-paragraph {
@@ -350,7 +345,6 @@ main {
   }
   .venu-heading-container {
     max-width: 400px;
-    margin: auto;
   }
   .venu-background-img {
     grid-column: 1/4;
@@ -362,9 +356,12 @@ main {
   .slideshow-container {
     grid-column: 0;
   }
+  .invite-section {
+    align-items: top;
+  }
   .invite-section .invite-image-container {
     flex-direction: row;
-    padding-block: 1rem;
+    align-items: flex-start;
   }
   .invite-section .invite-image-container img {
     max-width: 400px;
