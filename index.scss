@@ -212,7 +212,7 @@ main {
         font-family: "CustomFont";
         letter-spacing: 3px;
         font-size: clamp(1rem, 5vw, 2rem);
-        color:var(--font-color);
+        color: var(--font-color);
 }
       
        .invite-image-container {
@@ -382,8 +382,8 @@ main {
 }
 
 .faq-active:after {
- content: "\2796";
  /* Unicode character for "minus" sign (-) */
+ content: "\2796";
 }
 
 @media only screen and (min-width: 768px) {

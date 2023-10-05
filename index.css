@@ -328,8 +328,8 @@ main {
 }
 
 .faq-active:after {
-  content: "➖";
   /* Unicode character for "minus" sign (-) */
+  content: "➖";
 }
 
 @media only screen and (min-width: 768px) {
