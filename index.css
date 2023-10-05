@@ -114,8 +114,10 @@ body {
 .slider-section img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center 50%;
+     object-position: center 50%;
 }
 
 /* Hide the images by default */
@@ -210,7 +212,6 @@ main {
 }
 
 #main-venu {
-  height: 100vh;
   grid-template-rows: 380px 1fr;
 }
 
@@ -219,6 +220,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 
 .venu-container {
@@ -238,8 +240,10 @@ main {
 .venu-background-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center 50%;
+     object-position: center 50%;
 }
 
 .venu-main-paragraph {
@@ -252,7 +256,7 @@ main {
 .headings {
   padding-block: 2rem;
   text-align: center;
-  font-size: clamp(2.2rem, 10vw, 3.5rem);
+  font-size: clamp(2rem, 5vw, 2.5rem);
   color: var(--font-color);
   font-family: "MyCustomFont";
   letter-spacing: 3px;
@@ -332,11 +336,14 @@ main {
   #main-venu {
     grid-template-columns: 200px 1fr;
   }
+  #main-venu .navigation-expanded-container {
+    grid-row: 2/2;
+  }
+  .invite-section {
+    grid-column: 2;
+  }
   .burger-icon {
     display: none;
-  }
-  .venu-container {
-    height: 60vh;
   }
   .venu-heading-container {
     max-width: 400px;
@@ -371,7 +378,7 @@ main {
     font-family: "MyCustomFont";
     display: flex;
     justify-content: center;
-    grid-row: 2/4;
+    grid-row: 1/4;
   }
   .navigation-expanded-container ul {
     display: flex;

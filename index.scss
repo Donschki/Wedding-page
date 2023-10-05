@@ -241,7 +241,6 @@ main {
 // VENU PAGE
 
 #main-venu {
- height: 100vh;
  grid-template-rows: 380px 1fr;
 }
 
@@ -250,12 +249,13 @@ main {
  flex-direction: column;
  justify-content: center;
  align-items: center;
+
+ padding: 1rem;
 }
 
 .venu-container {
  display: grid ;
  grid-row: 2/4;
-
 }
 
 .venu-iframe-container {
@@ -303,10 +303,11 @@ main {
 .headings {
  padding-block: 2rem;
  text-align: center;
- font-size: clamp(2.2rem, 10vw, 3.5rem);
+ font-size: clamp(2rem, 5vw, 2.5rem);;
  color: var(--font-color);
  font-family: 'MyCustomFont';
  letter-spacing: 3px;
+ 
 }
 
 .faq-container {
@@ -386,14 +387,18 @@ main {
 
 #main-venu {
  grid-template-columns: 200px 1fr;
+
+ .navigation-expanded-container {
+      grid-row: 2/2;
+ }
+}
+
+.invite-section {
+      grid-column: 2;
 }
 
 .burger-icon {
  display: none;
-}
-
-.venu-container {
- height: 60vh;
 }
 
 .venu-heading-container {
@@ -438,20 +443,13 @@ main {
 
 .navigation-expanded-container {
  background: var(--base-color-dark);
-//  background: linear-gradient(
-//       to top,
-//       rgb(205, 188, 175, 0) 0%,
-//       rgb(205, 188, 175, 0) 0%,
-//       rgb(205, 188, 175, 1) 90%,
-//       rgb(205, 188, 175, 1) 100%
-//     );
  
  font-family: "MyCustomFont";
 
  display: flex;
  justify-content: center;
 
- grid-row: 2/4;
+ grid-row: 1/4;
 
        ul {
             display: flex;
