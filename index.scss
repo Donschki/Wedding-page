@@ -204,15 +204,15 @@ main {
 .invite-section {
 
        h1 { 
-        text-align: center;
-        max-width: 350px;
-        margin: auto;
-        padding-top: 2rem;
+       text-align: center;
+       max-width: 350px;
+       margin: auto;
+       padding-top: 2rem;
 
-        font-family: "CustomFont";
-        letter-spacing: 3px;
-        font-size: clamp(1.5rem, 5vw, 2.5rem);
-        color: var(--font-color);
+       font-family: "CustomFont";
+       letter-spacing: 3px;
+       font-size: clamp(1.5rem, 5vw, 2.5rem);
+       color: var(--font-color);
 }
       
        .invite-image-container {
@@ -230,7 +230,6 @@ main {
        position: absolute;
        right: 0; top: 60rem;
        z-index: -1;
-
       }
 
       .fern-2 {
@@ -256,13 +255,12 @@ main {
 
 .venu-container {
  display: grid ;
- height: 70vh;
+ height: 65vh;
 }
 
 .venu-iframe-container {
  height: 50vh;
  padding: 1rem;
-
 
        iframe {
        width: 100%; height: 100%;
@@ -310,7 +308,6 @@ main {
  color: var(--font-color);
  font-family: 'MyCustomFont';
  letter-spacing: 3px;
- 
 }
 
 .faq-container {
@@ -389,15 +386,15 @@ main {
 @media only screen and (min-width: 768px) {
 
 #main-index {
-      grid-template-columns: 200px 1fr;
+ grid-template-columns: 200px 1fr;
 }
 
 #main-venu {
  grid-template-columns: 200px 1fr;
 
- .navigation-expanded-container {
-      grid-row: 2/2;
- }
+       .navigation-expanded-container {
+       grid-row: 2/2;
+      }
 }
 
 .invite-section {
@@ -425,7 +422,6 @@ main {
 .slideshow-container {
  grid-column: 0;
 }
-
 
 .invite-section {
       align-items: top;
@@ -479,13 +475,13 @@ main {
 
 }
 
-       #faq-main {
+#faq-main {
        display: grid;
        grid-template-columns: 200px 1fr;
        height: 100vh;
        grid-row: 1/3;
        gap: 1rem;
-      }
+}
 }
 
 @media only screen and (min-width: 1000px) {
