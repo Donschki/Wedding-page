@@ -44,7 +44,7 @@ body {
   z-index: 2;
 }
 .burger-icon span {
-  border: solid 1px rgb(255, 255, 255);
+  border: solid 1px white;
   width: 100%;
 }
 
@@ -143,7 +143,7 @@ body {
   height: 30px;
   width: 30px;
   margin: 0 10px;
-  background-color: rgb(205, 188, 175);
+  background-color: #cdbcaf;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -269,8 +269,10 @@ main {
   letter-spacing: 3px;
   overflow: scroll;
   overflow-x: hidden;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .faq-container::-webkit-scrollbar {
@@ -332,26 +334,33 @@ main {
   #main-venu {
     grid-template-columns: 200px 1fr;
   }
+
   .burger-icon {
     display: none;
   }
+
   .venu-container {
     height: 60vh;
   }
+
   .venu-heading-container {
     max-width: 400px;
     margin: auto;
   }
+
   .venu-background-img {
     grid-column: 1/4;
   }
+
   .venu-iframe-container {
     grid-column: 2/4;
     height: 100%;
   }
+
   .slideshow-container {
     grid-column: 0;
   }
+
   .invite-section .invite-image-container {
     flex-direction: row;
     padding-block: 1rem;
@@ -366,6 +375,7 @@ main {
   .invite-section .fern-2 {
     left: 10rem;
   }
+
   .navigation-expanded-container {
     background: var(--base-color-dark);
     font-family: "MyCustomFont";
@@ -388,6 +398,7 @@ main {
     margin: 2rem auto;
     letter-spacing: 4px;
   }
+
   #faq-main {
     display: grid;
     grid-template-columns: 200px 1fr;
@@ -406,7 +417,8 @@ main {
   .invite-section .invite-image-container img {
     width: 427px;
   }
+
   .invite-image-container .fern {
     top: 50rem;
   }
-}/*# sourceMappingURL=index.css.map */
+}
