@@ -278,6 +278,9 @@ main {
 #main-gift-registry h2:hover a {
   color: white;
 }
+#main-gift-registry h2:hover span {
+  translate: 30px;
+}
 #main-gift-registry img {
   position: fixed;
   top: 0rem;
@@ -287,6 +290,18 @@ main {
   z-index: -1;
   color: white;
   border-color: white;
+}
+
+#main-lodging h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main-lodging h2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: var(--font-color);
 }
 
 .headings {
@@ -379,24 +394,25 @@ main {
   #main-venu .navigation-expanded-container {
     grid-row: 2/2;
   }
-  #main-gift-registry {
+  #main-gift-registry, #main-lodging {
     grid-template-columns: 200px 1fr;
+    font-family: "MyCustomFont";
+    height: 100vh;
   }
-  #main-gift-registry .navigation-expanded-container {
+  #main-gift-registry .navigation-expanded-container, #main-lodging .navigation-expanded-container {
     grid-row: 1/5;
   }
-  #main-gift-registry h1 {
+  #main-gift-registry h1, #main-lodging h1 {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  #main-gift-registry h2 {
-    font-size: 3rem;
-    height: 100px;
+  #main-gift-registry h2, #main-lodging h2 {
+    font-size: 2rem;
     display: grid;
-    justify-content: left;
     margin-left: 0rem;
     padding-left: 5rem;
+    font-weight: 100;
   }
   .invite-section {
     grid-column: 2;
