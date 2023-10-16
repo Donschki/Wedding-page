@@ -77,7 +77,7 @@ body {
   flex-direction: column;
   position: fixed;
   text-align: left;
-  background: var(--base-color-dark);
+  background-image: linear-gradient(to right, var(--font-color), rgba(148, 129, 114, 0));
   top: 0;
   left: -100%;
   height: 100%;
@@ -171,8 +171,12 @@ main {
   display: grid;
 }
 
-.countdown-timer #demo {
-  background: black;
+.countdown-timer {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .invite-section h1 {
@@ -463,7 +467,7 @@ main {
   }
 
   .navigation-expanded-container {
-    background: var(--base-color-dark);
+    background-image: linear-gradient(to right, var(--font-color), rgba(148, 129, 114, 0));
     font-family: "MyCustomFont";
     display: flex;
     justify-content: center;

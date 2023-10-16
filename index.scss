@@ -86,7 +86,7 @@ body {
  position: fixed;
  text-align: left;
  
- background: var(--base-color-dark);
+ background-image: linear-gradient(to right, var(--font-color), rgba(148, 129, 114, 0));
   
  top: 0;
  left: -100%;
@@ -190,10 +190,11 @@ main {
 }
 
 .countdown-timer {
-      
-       #demo {
-             background: black;
-      }  
+ display: flex;
+ margin: auto;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
 }
 
 .invite-section {
@@ -526,7 +527,8 @@ img {
 }
 
 .navigation-expanded-container {
- background: var(--base-color-dark);
+      background-image: linear-gradient(to right, var(--font-color), rgba(148, 129, 114, 0));
+
  
  font-family: "MyCustomFont";
 
