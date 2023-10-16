@@ -86,12 +86,13 @@ body {
  position: fixed;
  text-align: left;
  
- background-image: linear-gradient(to right, var(--font-color), rgba(148, 129, 114, 0));
+ background-image: linear-gradient(to bottom, var(--base-color-dark), var(--base-color-light));
+
   
  top: 0;
  left: -100%;
- height: 100%;
- transition: 0.5s ease-in ;
+ height: 100vh;
+ transition: 0.3s ease-in-out  ;
  
  list-style: none;
  z-index: 1;
@@ -198,6 +199,7 @@ main {
 }
 
 .invite-section {
+      position: relative;
 
        h1 { 
        text-align: center;
@@ -224,15 +226,15 @@ main {
 
        .fern {
        position: absolute;
-       right: 0; top: 60rem;
+        top: 30rem; right: 0;
        z-index: -1;
       }
 
        .fern-2 {
        position: absolute;
-       left: -3rem; top: 30rem;
-       z-index: -1;
+       left: -3rem; top: 5rem;
        width: 300px; 
+       z-index: -1;
       }
 }
 
@@ -506,7 +508,6 @@ img {
 }
 
 .invite-section {
-      align-items: top;
 
        .invite-image-container {
        flex-direction: row;
@@ -518,16 +519,16 @@ img {
       }
 
        .fern {
-       right: 0; top: 45rem;
+       right: 0; top: 30rem;
       }
 
        .fern-2 {
-       left: 10rem;
+       left: 0;
       }
 }
 
 .navigation-expanded-container {
-      background-image: linear-gradient(to right, var(--font-color), rgba(148, 129, 114, 0));
+      background-image: linear-gradient(to bottom, var(--base-color-dark), var(--base-color-light));
 
  
  font-family: "MyCustomFont";
