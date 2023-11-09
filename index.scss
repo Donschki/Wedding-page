@@ -33,8 +33,7 @@
 // HYPERLINK FONT COLOR
 a {
        color: white;
-       text-align: center;
-            text-decoration: none;
+       text-decoration: none;
 }
 
 body {
@@ -347,16 +346,29 @@ img {
 // LODGING PAGE
 #main-lodging {
 
+      display: grid;
+      gap: 1rem;
+      height: 100vh;
+
       h1 {
             @include flexIt();
-      }
+       }
+     
+            h2 {
+            font-size: 1.5rem;
+            display: grid;
+            padding-left: 1rem;
+            font-weight: 100;
+            color: var(--base-color-dark);
+            font-weight: 100;
 
-      h2 {
-           display: flex;
-           align-items: center;
-           flex-direction: column;
-           color: var(--font-color);
-      }
+
+            a {
+                  margin-left: 0;
+                  font-size: 20px;
+            }
+           }
+
 }
 // 
 
@@ -477,14 +489,8 @@ img {
 
        h2 {
        font-size: 2rem;
-       display: grid;
-       margin-left: 0rem;
-       padding-left: 5rem;
-       font-weight: 100;
       }
 }
-
-
 
 .invite-section {
       grid-column: 2;
