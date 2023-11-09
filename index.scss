@@ -116,6 +116,10 @@ body {
 
 .navigation-expanded-container {
  display: none;
+
+ a {
+      text-align: center;
+ }
 }
 
 // HOME PAGE
@@ -471,6 +475,8 @@ img {
 
        .navigation-expanded-container {
        grid-row: 2/2;
+
+    
       }
 }
 
@@ -530,12 +536,9 @@ img {
       }
 
        .fern {
-       right: 0; top: 30rem;
+       right: 0; top: 20rem;
       }
 
-       .fern-2 {
-       left: 0;
-      }
 }
 
 .navigation-expanded-container {
@@ -598,7 +601,7 @@ img {
 
         .invite-image-container {
             .fern {
-                  top: 50rem;
+                  top: 30rem;
               }
         }
 

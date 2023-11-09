@@ -102,6 +102,9 @@ body {
 .navigation-expanded-container {
   display: none;
 }
+.navigation-expanded-container a {
+  text-align: center;
+}
 
 .slider-section {
   height: 50vh;
@@ -458,10 +461,7 @@ main {
   }
   .invite-section .fern {
     right: 0;
-    top: 30rem;
-  }
-  .invite-section .fern-2 {
-    left: 0;
+    top: 20rem;
   }
   .navigation-expanded-container {
     background-image: linear-gradient(to bottom, var(--base-color-dark), var(--base-color-light));
@@ -504,6 +504,6 @@ main {
     width: 427px;
   }
   .invite-image-container .fern {
-    top: 50rem;
+    top: 30rem;
   }
 }/*# sourceMappingURL=index.css.map */
