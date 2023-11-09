@@ -178,7 +178,7 @@ main {
   font-size: 30px;
   padding: 10px;
   color: var(--base-color-dark);
-  border: 1px solid var(--base-color-dark);
+  border: 2px solid var(--base-color-dark);
   background-color: var(--base-color-light);
 }
 
