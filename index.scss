@@ -190,13 +190,18 @@ main {
  display: grid;
 }
 
-.countdown-timer {
+#timer {
  display: flex;
- margin: auto;
- justify-content: center;
- align-items: center;
- text-align: center;
+ flex-direction: column;
+ gap: 10px;
+ font-size: 30px;
+ padding: 10px;
+ color: var(--base-color-dark);
+ border: 1px solid var(--base-color-dark);
+
+ background-color: var(--base-color-light);
 }
+
 
 .invite-section {
       position: relative;
