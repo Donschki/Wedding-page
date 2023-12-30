@@ -117,8 +117,10 @@ body {
 .slider-section img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center 50%;
+     object-position: center 50%;
 }
 
 /* Hide the images by default */
@@ -250,8 +252,10 @@ main {
 .venu-background-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center 50%;
+     object-position: center 50%;
 }
 
 .venu-main-paragraph {
