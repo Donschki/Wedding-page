@@ -514,10 +514,6 @@ main {
   .slideshow-container {
     position: relative;
   }
-  .slideshow-container img {
-    -o-object-position: center 30%;
-       object-position: center 30%;
-  }
   .venu-container {
     grid-column: 2;
     grid-row: 1;
