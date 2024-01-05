@@ -283,6 +283,7 @@ main {
  letter-spacing: 2px;
  word-spacing: 3px;
  font-size: 1rem;
+ text-align: center;
 }
 
 // GIFT REGISTRY PAGE
@@ -478,10 +479,9 @@ height: 100vh;
 
 #main-venu {
  grid-template-columns: 200px 1fr;
- grid-template-rows:  100% 55%;
 
        .navigation-expanded-container {
-       grid-row: 1/3;
+       grid-row: 2/4;
       }
 }
 
@@ -515,17 +515,14 @@ height: 100vh;
  display: none;
 }
 
-.venu-heading-container {
- max-width: 650px;
-}
-
 .venu-background-img {
  height: 50vh;
+ grid-row: 1;
+ grid-column: 1/3;
 }
 
 .venu-iframe-container {
  grid-column: 2/4;   
- height: 100%;
 
 }
 
@@ -547,7 +544,6 @@ height: 100vh;
        .fern {
        right: 0; top: 20rem;
       }
-
 }
 
 .navigation-expanded-container { 
@@ -591,17 +587,12 @@ height: 100vh;
 
 @media only screen and (min-width: 1024px) {
 
-      .slideshow-container {
-            position: relative;
+       .slideshow-container {
+             position: relative;
 
-            img {
-
-                  
-            }
       }
  .venu-container {
  grid-column: 2;
- grid-row: 1;
 }
 
 }
@@ -617,7 +608,5 @@ height: 100vh;
                   top: 30rem;
               }
         }
-
-       
 }
 
