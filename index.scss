@@ -30,6 +30,21 @@
        align-items: center;
 }
 
+// SCROLLBAR EDIT
+::-webkit-scrollbar {
+      width: 1rem; /* Adjust the width of the scrollbar */
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: var(--base-color-light); /* Change the color of the scrollbar track */
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: var(--base-color-dark); /* Change the color of the scrollbar handle */
+    }
+
 // HYPERLINK FONT COLOR
 a {
        color: white;
