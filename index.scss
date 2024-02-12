@@ -338,8 +338,7 @@ main {
 
 // LODGING PAGE
 #main-lodging {
-height: 100vh;
-
+ height: 100vh;
        h1 {
              @include flexIt();
        }
@@ -351,18 +350,45 @@ height: 100vh;
        font-weight: 100;
        color: var(--base-color-dark);
        font-weight: 100;
+       margin: 2rem 0;
 
        a {
         margin-left: 0;
         font-size: 20px;
        }
 
+   
 
+  
+}
+h2 {
+      font-size: 2.5rem;
+      color: var(--font-color);
+      padding: 2rem;
+      font-weight: 100;
+      letter-spacing: 5px;
+      transition: 0.5s ease-out;
+      font-family: "MyCustomFont", Arial, sans-serif;
+
+      span { 
+      font-size: 1rem;
+      margin: auto;
+      border-bottom: 1px var(--base-color-dark) solid;
+      transition: 0.5s ease-out;
+
+      a {
+      color: var(--base-color-dark);
+      transition: 0.5s ease-out;
+
+      }
+      }
+}
+h2:hover  {
+      background-image: linear-gradient(to right, var(--base-color-dark), rgba(255, 255, 255, 0) );
+      color: white;
+     }
 }
 
-
-
-}
 
 // FAQ PAGE
 

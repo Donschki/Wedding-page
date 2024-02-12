@@ -318,10 +318,34 @@ main {
   font-weight: 100;
   color: var(--base-color-dark);
   font-weight: 100;
+  margin: 2rem 0;
 }
 #main-lodging h2 a {
   margin-left: 0;
   font-size: 20px;
+}
+#main-lodging h2 {
+  font-size: 2.5rem;
+  color: var(--font-color);
+  padding: 2rem;
+  font-weight: 100;
+  letter-spacing: 5px;
+  transition: 0.5s ease-out;
+  font-family: "MyCustomFont", Arial, sans-serif;
+}
+#main-lodging h2 span {
+  font-size: 1rem;
+  margin: auto;
+  border-bottom: 1px var(--base-color-dark) solid;
+  transition: 0.5s ease-out;
+}
+#main-lodging h2 span a {
+  color: var(--base-color-dark);
+  transition: 0.5s ease-out;
+}
+#main-lodging h2:hover {
+  background-image: linear-gradient(to right, var(--base-color-dark), rgba(255, 255, 255, 0));
+  color: white;
 }
 
 .headings {
