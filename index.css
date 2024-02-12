@@ -142,7 +142,9 @@ img {
 
 /* Hide the images by default */
 .mySlides {
+  width: 100%;
   height: 100%;
+  position: absolute;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -240,6 +242,48 @@ main {
   width: 300px;
   z-index: -1;
 }
+.invite-section h2 {
+  font-size: 2.5rem;
+  color: var(--font-color);
+  padding: 2rem;
+  font-weight: 100;
+  letter-spacing: 5px;
+  transition: 0.5s ease-out;
+  font-family: "MyCustomFont", Arial, sans-serif;
+}
+.invite-section h2 span {
+  font-size: 1rem;
+  margin: auto;
+  border-bottom: 1px var(--base-color-dark) solid;
+  transition: 0.5s ease-out;
+}
+.invite-section h2 span a {
+  color: var(--base-color-dark);
+  transition: 0.5s ease-out;
+}
+.invite-section h2 {
+  font-size: 2.5rem;
+  color: var(--font-color);
+  padding: 2rem;
+  font-weight: 100;
+  letter-spacing: 5px;
+  transition: 0.5s ease-out;
+  font-family: "MyCustomFont", Arial, sans-serif;
+}
+.invite-section h2 span {
+  font-size: 1rem;
+  margin: auto;
+  border-bottom: 1px var(--base-color-dark) solid;
+  transition: 0.5s ease-out;
+}
+.invite-section h2 span a {
+  color: var(--base-color-dark);
+  transition: 0.5s ease-out;
+}
+.invite-section h2:hover {
+  background-image: linear-gradient(to right, var(--base-color-dark), rgba(255, 255, 255, 0));
+  color: white;
+}
 
 .venu-heading-container {
   display: flex;
@@ -312,12 +356,6 @@ main {
 #main-gift-registry h2:hover {
   background-image: linear-gradient(to right, var(--base-color-dark), rgba(255, 255, 255, 0));
   color: white;
-}
-#main-gift-registry h2:hover a {
-  color: white;
-}
-#main-gift-registry h2:hover span {
-  translate: 30px;
 }
 #main-gift-registry img {
   position: fixed;
