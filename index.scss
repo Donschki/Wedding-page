@@ -285,31 +285,7 @@ main {
             }
             }
       }
-      
-      h2 {
-            font-size: 2.5rem;
-            color: var(--font-color);
-            padding: 2rem;
-            font-weight: 100;
-            letter-spacing: 5px;
-            transition: 0.5s ease-out;
-            font-family: "MyCustomFont", Arial, sans-serif;
-      
-            span { 
-            font-size: 1rem;
-            margin: auto;
-            border-bottom: 1px var(--base-color-dark) solid;
-            transition: 0.5s ease-out;
-      
-            a {
-            color: var(--base-color-dark);
-            transition: 0.5s ease-out;
-      
-            }
-            }
-          
-      }
-      
+
       h2:hover  {
            background-image: linear-gradient(to right, var(--base-color-dark), rgba(255, 255, 255, 0) );
            color: white;
@@ -358,61 +334,7 @@ main {
 
 // GIFT REGISTRY PAGE
 
-#main-gift-registry {
-      height: 100vh;
 
- .gift-registry{
-      display: grid;
-      align-items: center;
-      height: 800px;
-      margin: auto 0;
- }
-
- a {
-       width: 100%;
-
- }
-
- h2 {
-       font-size: 2.5rem;
-       color: var(--font-color);
-       padding: 2rem;
-       font-weight: 100;
-       letter-spacing: 5px;
-       transition: 0.5s ease-out;
-       font-family: "MyCustomFont", Arial, sans-serif;
-
-       span { 
-       font-size: 1rem;
-       margin: auto;
-       border-bottom: 1px var(--base-color-dark) solid;
-       transition: 0.5s ease-out;
-
-       a {
-       color: var(--base-color-dark);
-       transition: 0.5s ease-out;
-
-       }
-       }
-     
-}
-
-h2:hover  {
-      background-image: linear-gradient(to right, var(--base-color-dark), rgba(255, 255, 255, 0) );
-      color: white;
-     }
-
-
-img {
- position: fixed;
- top: 0%;
- right: -15rem;
- width: 900px; height: 900px;
- z-index: -1;
- color: white;
- border-color: white;
-}
-}
 
 // LODGING PAGE
 #main-lodging {
@@ -451,8 +373,6 @@ height: 100vh;
  color: var(--font-color);
  font-family: 'MyCustomFont';
  letter-spacing: 3px;
- font-weight: 100;
-
 }
 
 .faq-container {
@@ -612,6 +532,27 @@ height: 100vh;
 
        .fern {
        right: 0; top: 20rem;
+      }
+
+      #main-gift-registry {
+            height: 100vh;
+      
+       .gift-registry{
+            display: grid;
+            align-items: center;
+            height: 800px;
+            margin: auto 0;
+      
+       a {
+             width: 100%;
+      
+       }
+
+       .gift-registry-heading {
+            font-size: 100px;
+       }
+      
+       }
       }
 }
 

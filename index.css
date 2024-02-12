@@ -261,25 +261,6 @@ main {
   color: var(--base-color-dark);
   transition: 0.5s ease-out;
 }
-.invite-section h2 {
-  font-size: 2.5rem;
-  color: var(--font-color);
-  padding: 2rem;
-  font-weight: 100;
-  letter-spacing: 5px;
-  transition: 0.5s ease-out;
-  font-family: "MyCustomFont", Arial, sans-serif;
-}
-.invite-section h2 span {
-  font-size: 1rem;
-  margin: auto;
-  border-bottom: 1px var(--base-color-dark) solid;
-  transition: 0.5s ease-out;
-}
-.invite-section h2 span a {
-  color: var(--base-color-dark);
-  transition: 0.5s ease-out;
-}
 .invite-section h2:hover {
   background-image: linear-gradient(to right, var(--base-color-dark), rgba(255, 255, 255, 0));
   color: white;
@@ -322,52 +303,6 @@ main {
   text-align: center;
 }
 
-#main-gift-registry {
-  height: 100vh;
-}
-#main-gift-registry .gift-registry {
-  display: grid;
-  align-items: center;
-  height: 800px;
-  margin: auto 0;
-}
-#main-gift-registry a {
-  width: 100%;
-}
-#main-gift-registry h2 {
-  font-size: 2.5rem;
-  color: var(--font-color);
-  padding: 2rem;
-  font-weight: 100;
-  letter-spacing: 5px;
-  transition: 0.5s ease-out;
-  font-family: "MyCustomFont", Arial, sans-serif;
-}
-#main-gift-registry h2 span {
-  font-size: 1rem;
-  margin: auto;
-  border-bottom: 1px var(--base-color-dark) solid;
-  transition: 0.5s ease-out;
-}
-#main-gift-registry h2 span a {
-  color: var(--base-color-dark);
-  transition: 0.5s ease-out;
-}
-#main-gift-registry h2:hover {
-  background-image: linear-gradient(to right, var(--base-color-dark), rgba(255, 255, 255, 0));
-  color: white;
-}
-#main-gift-registry img {
-  position: fixed;
-  top: 0%;
-  right: -15rem;
-  width: 900px;
-  height: 900px;
-  z-index: -1;
-  color: white;
-  border-color: white;
-}
-
 #main-lodging {
   height: 100vh;
 }
@@ -396,7 +331,6 @@ main {
   color: var(--font-color);
   font-family: "MyCustomFont";
   letter-spacing: 3px;
-  font-weight: 100;
 }
 
 .faq-container {
@@ -529,6 +463,21 @@ main {
   .invite-section .fern {
     right: 0;
     top: 20rem;
+  }
+  .invite-section #main-gift-registry {
+    height: 100vh;
+  }
+  .invite-section #main-gift-registry .gift-registry {
+    display: grid;
+    align-items: center;
+    height: 800px;
+    margin: auto 0;
+  }
+  .invite-section #main-gift-registry .gift-registry a {
+    width: 100%;
+  }
+  .invite-section #main-gift-registry .gift-registry .gift-registry-heading {
+    font-size: 100px;
   }
   .navigation-expanded-container {
     background: var(--base-color-dark);
