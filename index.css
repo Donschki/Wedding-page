@@ -163,8 +163,8 @@ img {
   text-align: center;
 }
 .dots .dot {
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
   margin: 0 10px;
   background-color: rgb(205, 188, 175);
   border-radius: 50%;
