@@ -302,21 +302,21 @@ main {
       
 }
 
-// VENU PAGE
+// venue PAGE
 
 
-.venu-heading-container {
+.venue-heading-container {
  display: flex;
  flex-direction: column;
  padding: 1rem;
  margin: 0 auto;
 }
 
-.venu-container {
+.venue-container {
  height: 100%;
 }
 
-.venu-iframe-container {
+.venue-iframe-container {
  height: 50vh;
  padding: 1rem;
 
@@ -325,7 +325,7 @@ main {
       }
 }
 
-.venu-background-img {
+.venue-background-img {
 
        img {
        width: 100%;  height: 100%;
@@ -334,7 +334,7 @@ main {
       }
 }
 
-.venu-main-paragraph {
+.venue-main-paragraph {
  color: var(--font-color);
  letter-spacing: 2px;
  word-spacing: 3px;
@@ -444,7 +444,7 @@ main {
        height: 100%;
 }
 
-#main-venu {
+#main-venue {
  grid-template-columns: 200px 1fr;
 
        .navigation-expanded-container {
@@ -460,13 +460,13 @@ main {
  display: none;
 }
 
-.venu-background-img {
+.venue-background-img {
  height: 50vh;
  grid-row: 1;
  grid-column: 1/3;
 }
 
-.venu-iframe-container {
+.venue-iframe-container {
  grid-column: 2/4;   
 
 }
@@ -557,7 +557,7 @@ main {
              position: relative;
 
       }
- .venu-container {
+ .venue-container {
  grid-column: 2;
 }
 
