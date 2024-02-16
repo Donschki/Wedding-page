@@ -34,5 +34,5 @@
  }
  
  // Set the target date for the countdown (year, month (0-based), day, hour, minute, second)
- const targetDate = new Date(2024, 3, 23, 3, 0, 0); // January 1, 2023
+ const targetDate = new Date(2024, 2, 24, 3, 0, 0); // January 1, 2023
  startCountdown(targetDate);
